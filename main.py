@@ -10,8 +10,8 @@ random_word = random.choice(words)
 word = {}
 for i in random_word:
     word[i] = False
-
-bot = TeleBot('5229115572:AAE8Z3tGemBMD4-nU5XF2AmvWZPNFmeCWuk')
+link = open(r'api.txt')
+bot = TeleBot(link.readline())
 
 
 @bot.message_handler(commands=['start', 'help'])
